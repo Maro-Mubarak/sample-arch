@@ -1,0 +1,99 @@
+name: sample_arch
+description: "A new Flutter project."
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.2
+
+# Dependencies are organized by category for better readability and maintenance
+dependencies:
+  # Flutter SDK packages
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State Management
+  flutter_bloc: ^9.1.0 # BLoC pattern implementation for Flutter
+  equatable: ^2.0.7 # Simplifies equality comparisons for classes
+
+  # Networking
+  dio: ^5.7.0 # HTTP client for API requests
+  retrofit: ^4.4.2 # Type-safe HTTP client generator
+  pretty_dio_logger: ^1.4.0 # Logger for Dio HTTP requests and responses
+
+  # Dependency Injection
+  get_it: ^7.7.0 # Service locator for dependency injection
+
+  # Data Serialization & Code Generation
+  json_annotation: ^4.9.0 # Annotations for JSON serialization
+  json_serializable: ^6.7.1 # JSON serialization code generator
+  retrofit_generator: ^9.1.5 # Code generator for Retrofit
+  build_runner: ^2.4.15 # Tool to run code generators
+  freezed_annotation: ^2.4.4 # Annotations for Freezed
+  freezed: ^2.5.8 # Code generation for immutable classes
+
+  # Localization & Internationalization
+  intl: ^0.19.0 # Internationalization and localization support
+  intl_utils: ^2.8.7 # Utilities for working with intl
+
+  # UI Components & Styling
+  flutter_svg: ^2.0.17 # SVG rendering support
+  cupertino_icons: ^1.0.8 # iOS-style icons
+  shimmer: ^3.0.0 # Shimmer loading effect
+  skeletonizer: ^1.4.2 # Skeleton loading screens
+  flutter_screenutil: ^5.9.3 # Responsive UI utilities
+
+  # Navigation
+  go_router: ^14.8.1 # Declarative routing for Flutter
+
+  # Storage
+  shared_preferences: ^2.5.2 # Persistent storage for simple data
+
+  # Image Handling
+  cached_network_image: ^3.4.1 # Caching for network images
+
+  # Error Monitoring & Reporting
+  sentry_flutter: ^8.13.2 # Error monitoring and crash reporting
+
+dev_dependencies:
+  # Testing
+  flutter_test:
+    sdk: flutter
+
+  # Linting & Code Quality
+  flutter_lints: ^5.0.0 # Recommended lints for Flutter apps
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/svgs/
+    - assets/images/
+    - assets/lottie/
+    - assets/temp/
+
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: assets/fonts/Roboto/Roboto-Light.ttf
+  #         weight: 300
+  #       - asset: assets/fonts/Roboto/Roboto-Regular.ttf
+  #         weight: 400
+  #       - asset: assets/fonts/Roboto/Roboto-Medium.ttf
+  #         weight: 500
+  #       - asset: assets/fonts/Roboto/Roboto-Bold.ttf
+  #         weight: 700
+  #       - asset: assets/fonts/Roboto/Roboto-Black.ttf
+  #         weight: 900
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
+flutter_intl:
+  enabled: true
